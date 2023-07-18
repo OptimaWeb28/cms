@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Отзывы",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "На модерации",
+        "Опубликован"
+      ],
+      "required": true
+    },
+    "Raiting": {
+      "type": "enumeration",
+      "enum": [
+        "Like",
+        "Dislike"
+      ],
+      "required": true
+    },
+    "Date": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\d{1,2}\\.\\d{1,2}\\.\\d{4}$"
+    }
+  }
+}

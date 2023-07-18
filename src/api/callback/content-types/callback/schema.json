@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "callbacks",
+  "info": {
+    "singularName": "callback",
+    "pluralName": "callbacks",
+    "displayName": "Заявки на обратный звонок",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Новая",
+        "Обработана"
+      ],
+      "default": "Новая"
+    }
+  }
+}

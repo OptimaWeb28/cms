@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "phone_numbers",
+  "info": {
+    "singularName": "phone-number",
+    "pluralName": "phone-numbers",
+    "displayName": "Номер телефона",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Number": {
+      "type": "string",
+      "required": true,
+      "default": "+7 (914) 579-77-99"
+    },
+    "NumberLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

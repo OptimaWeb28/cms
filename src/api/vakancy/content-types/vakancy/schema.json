@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vakancyes",
+  "info": {
+    "singularName": "vakancy",
+    "pluralName": "vakancyes",
+    "displayName": "Резюме",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Phone": {
+      "type": "string",
+      "required": true
+    },
+    "Info": {
+      "type": "text"
+    },
+    "Resume": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}

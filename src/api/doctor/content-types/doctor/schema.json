@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "singularName": "doctor",
+    "pluralName": "doctors",
+    "displayName": "Наши врачи",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FIO": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Position": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Raiting": {
+      "type": "float",
+      "required": true,
+      "max": 5,
+      "min": 1,
+      "default": 1,
+      "pluginOptions": {}
+    },
+    "Satisfaction": {
+      "type": "integer",
+      "default": 10,
+      "required": true,
+      "max": 100,
+      "min": 10,
+      "pluginOptions": {}
+    },
+    "Education": {
+      "type": "enumeration",
+      "enum": [
+        "Среднее специальное",
+        "Высшее"
+      ],
+      "default": "Высшее",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Experience": {
+      "type": "integer",
+      "default": 1,
+      "max": 100,
+      "min": 1,
+      "pluginOptions": {}
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "FIO"
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "Medods_link": {
+      "type": "string"
+    }
+  }
+}

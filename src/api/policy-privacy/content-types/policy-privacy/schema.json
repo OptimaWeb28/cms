@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "policy_privacys",
+  "info": {
+    "singularName": "policy-privacy",
+    "pluralName": "policy-privacys",
+    "displayName": "Политика конфиденциальности",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Text": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

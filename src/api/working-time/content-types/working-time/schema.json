@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "working_times",
+  "info": {
+    "singularName": "working-time",
+    "pluralName": "working-times",
+    "displayName": "Время работы"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Days": {
+      "type": "string",
+      "default": "Пн-Вс",
+      "required": true
+    },
+    "Hours": {
+      "type": "string",
+      "default": "8:00-19:00",
+      "required": true
+    }
+  }
+}

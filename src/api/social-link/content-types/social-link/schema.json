@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "social_links",
+  "info": {
+    "singularName": "social-link",
+    "pluralName": "social-links",
+    "displayName": "Ссылки на социальные сети"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Vk": {
+      "type": "string",
+      "required": true
+    },
+    "Ok": {
+      "type": "string",
+      "required": true
+    },
+    "WhatsApp": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

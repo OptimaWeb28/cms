@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "addresses",
+  "info": {
+    "singularName": "address",
+    "pluralName": "addresses",
+    "displayName": "Адрес"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "City": {
+      "type": "string",
+      "default": "г. Белогорск, Амурская обл.",
+      "required": true
+    },
+    "Street": {
+      "type": "string",
+      "default": "ул.Серышева, 8",
+      "required": true
+    }
+  }
+}

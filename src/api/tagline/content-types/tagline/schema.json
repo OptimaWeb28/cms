@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "taglines",
+  "info": {
+    "singularName": "tagline",
+    "pluralName": "taglines",
+    "displayName": "Тэг вверху страницы на зеленом фоне"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "default": "Здоровье бесценно. Доверяйте лучшим",
+      "required": true
+    }
+  }
+}
